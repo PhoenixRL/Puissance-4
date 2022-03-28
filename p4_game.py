@@ -30,6 +30,7 @@ class Plateau :
                     break
                 val -= avancement[z]
                 VictoiresPossibles[z]+=1
+ta bote
 
 
     def get_case(x):
