@@ -10,6 +10,28 @@ class Plateau :
                 return True
         return False
 
+        
+     def Victoire(x=int()):
+        """Vérifie si victoire.
+        A voir si ca marche
+        """
+        avancement = [1,5,6,7]
+        VictoiresPossibles = [0,0,0,0]
+        for z in range(4):
+            val = x+avancement[z]
+            while get_case(val) ==Valeur:
+                if not (val<42 and val%7>x%7):
+                    break
+                val += avancement[z]
+                VictoiresPossibles[z]+=1
+            val = x-avancement[z]
+            while get_case(val) ==Valeur:
+                if not (val<42 and val%7> x%7):
+                    break
+                val -= avancement[z]
+                VictoiresPossibles[z]+=1
+
+
     def get_case(x):
        return self.plateau[x]
 
